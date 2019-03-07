@@ -7,6 +7,7 @@ import calendar
 dt = datetime.datetime.strftime(datetime.datetime.now(),"%Y-%m-%d-%H:%M-%S")
 day = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 month = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+dateAdd = ["st","nd","rd","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","st","nd","rd","th","th","th","th","th","th","th","st"]
 l = dt.split("-")
 
 dayNum = datetime.datetime.today().weekday()
@@ -16,10 +17,10 @@ year = l[0]
 #hourNum = int
 hourMinuteNum =l[3]
 hourMinuteSpl = hourMinuteNum.split(":")
-print(int(hourMinuteSpl[0]))
+#print(int(hourMinuteSpl[0]))
 if int(hourMinuteSpl[0]) >00 and int(hourMinuteSpl[0])<12:
-    print(day[dayNum],",",month[monthNum-1],dateNum,year,"at",hourMinuteNum,"AM")#prints day
-    print(dt)#prints day
-    print(l)
+    print(day[dayNum],",",month[monthNum-1],dateNum,dateAdd[dayNum],year,"at",hourMinuteNum,"AM")#prints day
+    #print(dt)#prints day
+    #print(l)
 elif int(hourMinuteSpl[0]) >11 and int(hourMinuteSpl[0])<24:
-    print(day[dayNum],",",month[monthNum-1],dateNum,year,"at",hourMinuteNum,"pm")#prints day
+    print(day[dayNum],",",month[monthNum-1],dateNum,dateAdd[dayNum],year,"at",hourMinuteNum,"pm")#prints day

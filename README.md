@@ -14,9 +14,11 @@ This repository contains my solutions to the problem set 2019 for the module Pro
 ##The Problem set and short description
 1. Name: 
     ProblemOne-sumupto.py
+    
    Description: 
     Write a program that asks the user to input any positive integer and outputs the
     sum of all numbers between one and that number.
+    
    How I wrote the Code:
     
 2. Name:

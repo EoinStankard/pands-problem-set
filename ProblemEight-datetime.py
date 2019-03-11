@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 02/03/2019
+#Date: 11/03/2019
 #Problem Eight: Write a program that outputs today’s date and time in the format ”Monday, January
 #10th 2019 at 1:15pm”
 import datetime
@@ -19,8 +19,8 @@ hourMinuteNum =l[3]
 hourMinuteSpl = hourMinuteNum.split(":")
 #print(int(hourMinuteSpl[0]))
 if int(hourMinuteSpl[0]) >00 and int(hourMinuteSpl[0])<12:
-    print(day[dayNum],",",month[monthNum-1],dateNum,dateAdd[dayNum],year,"at",hourMinuteNum,"AM")#prints day
+    print(day[dayNum]+",",month[monthNum-1],str(dateNum)+dateAdd[dateNum],year,"at",hourMinuteNum+"am")#prints day
     #print(dt)#prints day
     #print(l)
 elif int(hourMinuteSpl[0]) >11 and int(hourMinuteSpl[0])<24:
-    print(day[dayNum],",",month[monthNum-1],dateNum,dateAdd[dayNum],year,"at",hourMinuteNum,"pm")#prints day
+    print(day[dayNum]+",",month[monthNum-1],str(dateNum)+dateAdd[dateNum],year,"at",hourMinuteNum+"pm")#prints day

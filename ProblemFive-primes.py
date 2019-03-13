@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 02/03/2019
+#Date: 13/03/2019
 #Problem Five: Write a program that asks the user to input a positive integer and tells the user
 #whether or not the number is a prime.
 

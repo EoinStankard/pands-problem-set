@@ -14,6 +14,6 @@ def SumOfNum(Val):
     print(ans) #print final answer
 
 if(value.isdigit()): #Check if the input is an positive integer
-    SumOfNum(int(value))#Call the function created above to print the primes
+    SumOfNum(int(value))#Call the function created above to print the sum of all numbers between one and the value given 
 else:
     print("Incorrect Input Given")# incorrect input

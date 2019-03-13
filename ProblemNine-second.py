@@ -6,8 +6,10 @@
 #This program is created to display every second line, This does not include blank lines
 #So only every second line of text will be printed
 
+import sys
 x = 0 #line count
-with open('moby-dick.txt','r') as file:# Open the file moby-dick.txt as read only
+input =sys.argv[1]
+with open(input,'r') as file:#Read the file given in the commandline
     for line in file:
         # if the length of the line is greater that one character 
         #Lines with one character will be blank lines with the newline character at the end (\n)

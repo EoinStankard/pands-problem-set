@@ -3,7 +3,7 @@
 #Problem Five: Write a program that asks the user to input a positive integer and tells the user
 #whether or not the number is a prime.
 
-value=int(input("Please enter a positive integer: "))
+value=input("Please enter a positive integer: ")
 
 #This code will keep looping until the done variable is given 1. I used this as i will need to do multiple cycles
 #through each if statement to determine if it is a prime or not
@@ -38,5 +38,8 @@ def printprimes(value):
             divisor=divisor+1
 
 
-#Call the function created above to print the primes
-printprimes(value)
+
+if(value.isdigit()): #Check if the input is an positive integer
+    printprimes(int(value))#Call the function created above to print the primes
+else:
+    print("Incorrect Input Given")# incorrect input

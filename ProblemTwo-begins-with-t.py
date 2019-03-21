@@ -2,6 +2,7 @@
 #Date: 13/03/2019
 #Problem Two:Write a program that outputs whether or not today is a day that begins with the
 #letter T. An example of running this program on a Thursday is as follows.
+#References: https://docs.python.org/3/library/datatypes.html
 
 import datetime
 weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]#Days of the week

@@ -1,7 +1,8 @@
 #Name: Eoin Stankard
-#Date: 13/03/2019
+#Date: 21/03/2019
 #Problem Nine: Write a program that reads in a text file and outputs every second line. The program
 #should take the filename from an argument on the command line.
+#References: https://docs.python.org/2/tutorial/inputoutput.html
 
 #This program is created to display every second line, This does not include blank lines
 #So only every second line of text will be printed

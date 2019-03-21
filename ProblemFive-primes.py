@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 13/03/2019
+#Date: 21/03/2019
 #Problem Five: Write a program that asks the user to input a positive integer and tells the user
 #whether or not the number is a prime.
 
@@ -22,9 +22,6 @@ def printprimes(value):
         if value%divisor ==0 and divisorCount == 0:
             divisorCount = divisorCount +1
             divisor = divisor+1
-        #If the divisorCount equals 1 and the divisor equals the input value modulus the divisor equals zero 
-        #Then this number is a prime,The divisorcount will only increment is it finds a value that can divide into it 
-        #So if the divisor count reachs the input value then the value is a prime  
         elif divisorCount ==1 and divisor == value and value%divisor==0:
             print("This is a prime")
             done = 1

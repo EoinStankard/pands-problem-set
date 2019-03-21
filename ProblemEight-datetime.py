@@ -1,7 +1,10 @@
 #Name: Eoin Stankard
-#Date: 13/03/2019
+#Date: 21/03/2019
 #Problem Eight: Write a program that outputs today’s date and time in the format ”Monday, January
 #10th 2019 at 1:15pm”
+#References: https://docs.python.org/3/library/datatypes.html
+#            https://docs.python.org/2/library/string.html
+
 import datetime
 import calendar
 dt = datetime.datetime.strftime(datetime.datetime.now(),"%Y-%m-%d-%H:%M-%S") #prints the values for the date and time

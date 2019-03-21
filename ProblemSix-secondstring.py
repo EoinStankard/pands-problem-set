@@ -1,6 +1,7 @@
 #Name: Eoin Stankard
-#Date: 13/03/2019
+#Date: 21/03/2019
 #Problem Six: Write a program that takes a user input string and outputs every second word
+#References: https://docs.python.org/2/tutorial/datastructures.html
 
 string = input("Please enter a sentence: ")
 

@@ -14,30 +14,41 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot(v):
+    x = np.arange(0.0, 4.0, 1)
     if (v==1):
-        x = np.arange(0.0, 4.0, 1)
         plt.plot (x,'r--')
         plt.title('Plotting function x')
         plt.legend(['x'])
-        plt.show()
+        
     elif (v==2):
-        x = np.arange(0.0, 4.0, 1)
+        #x = np.arange(0.0, 4.0, 1)
         plt.plot (x**2,'b--')
         plt.title('Plotting function x^2')
         plt.legend(['x^2'])
-        plt.show()
+        #plt.xlabel('X-Axis')
+        #plt.ylabel('Y-Axis')
+        #plt.show()
     elif (v==3):
-        x = np.arange(0.0, 4.0, 1)
+        #x = np.arange(0.0, 4.0, 1)
         plt.title('Plotting function 2^x')
         plt.legend(['2^x'])
         plt.plot (2**x,'g--')
-        plt.show()
+        #plt.xlabel('X-Axis')
+        #plt.ylabel('Y-Axis')
+        #plt.show()
     else:
-        x = np.arange(0.0, 4.0, 1)
+        #x = np.arange(0.0, 4.0, 1)
         plt.plot ( x, 'r--', x**2, 'b--', 2**x, 'g--')
         plt.title('Plotting all functions')
         plt.legend(['x', 'x^2', '2^x'])
-        plt.show()
+        #plt.xlabel('X-Axis')
+        #plt.ylabel('Y-Axis')
+        #plt.grid(True)
+        #plt.show()
+    plt.xlabel('X-Axis')
+    plt.ylabel('Y-Axis')
+    plt.grid(True)
+    plt.show()
 
 if(value.isdigit()): #Check if the input is an positive integer
     if int(value)==1 or int(value)==2 or int(value)==3 or int(value)==4:#check if value is between 1-4

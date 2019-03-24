@@ -4,8 +4,10 @@ This repository contains my solutions to the problem set 2019 for the module Pro
 
 ##How to download this repository
 1. Go To Github
-2. click the download button
-
+2. Click the download button or Clone
+3. To clone- Open the command prompt in the desired destionation of the Repo, Get the Repository HTTP address and type the following in the command line
+    A. git clone "Address"
+    
 ##How to run the code
 1. Make sure Python is installed
 2. Go to the location of the python scripts and open a command window
@@ -146,4 +148,11 @@ This repository contains my solutions to the problem set 2019 for the module Pro
 
 
 ##References
+    1. https://docs.python.org/3/library/datatypes.html
+    
+    2. https://docs.python.org/2/library/string.html
+    
+    3. https://docs.python.org/2/tutorial/datastructures.html
+    
+    4. https://docs.python.org/2/tutorial/inputoutput.html
 

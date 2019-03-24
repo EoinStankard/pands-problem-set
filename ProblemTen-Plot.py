@@ -21,7 +21,7 @@ def plot(v):
         plt.legend(['x'])
         
     elif (v==2):
-        #x = np.arange(0.0, 4.0, 1)
+        #x =np.arange(0.0, 4.0, 1)
         plt.plot (x**2,'b--')
         plt.title('Plotting function x^2')
         plt.legend(['x^2'])

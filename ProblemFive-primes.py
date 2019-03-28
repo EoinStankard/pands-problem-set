@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 21/03/2019
+#Date: 28/03/2019
 #Problem Five: Write a program that asks the user to input a positive integer and tells the user
 #whether or not the number is a prime.
 
@@ -35,8 +35,10 @@ def printprimes(value):
             divisor=divisor+1
 
 
-
-if(value.isdigit()): #Check if the input is an positive integer
-    printprimes(int(value))#Call the function created above to print the primes
-else:
+try:
+    if int(value)>0:
+        printprimes(int(value))#Call the function created above to calculate the output values
+    elif int(value)<0:#if number is less than zero 
+        raise ValueError #raise exception
+except ValueError:
     print("Incorrect Input Given")# incorrect input

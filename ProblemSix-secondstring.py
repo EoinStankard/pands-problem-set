@@ -6,10 +6,12 @@
 string = input("Please enter a sentence: ")
 
 spl = string.split(" ")#split the input string using spaces
-
 l = list(spl)#Add each word to a list
 l2 = []#Second list created to store every second word
 x = 0#variable to count every second word
+
+if len(l) == 1:#Checks for no input
+    print("No Input given")
 
 #while loop to go through the list
 #Even length string will finish on the last word (Even amount of words)

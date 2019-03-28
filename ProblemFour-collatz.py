@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 21/03/2019
+#Date: 28/03/2019
 #Problem Four: Write a program that asks the user to input any positive integer and outputs the
 #successive values of the following calculation. At each step calculate the next value
 #by taking the current value and, if it is even, divide it by two, but if it is odd, multiply
@@ -23,7 +23,10 @@ def calculate(value):
     print(*l,sep=" ")#prints list without square brackets and quotation
 
 
-if(InputValue.isdigit()): #Check if the input is an positive integer
-    calculate(int(InputValue))#Call the function created above to calculate the output values
-else:
+try:
+    if int(InputValue)>0:
+        calculate(int(InputValue))#Call the function created above to calculate the output values
+    elif int(InputValue)<0:#if number is less than zero 
+        raise ValueError #raise exception
+except ValueError:
     print("Incorrect Input Given")# incorrect input

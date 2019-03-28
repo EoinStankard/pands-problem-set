@@ -1,5 +1,5 @@
 #Name: Eoin Stankard
-#Date: 13/03/2019
+#Date: 28/03/2019
 #Problem One:Write a program that asks the user to input any positive integer and outputs the
 #sum of all numbers between one and that number.
 
@@ -13,7 +13,11 @@ def SumOfNum(Val):
         ans = ans+x #set answer to current value of x plus current value of ans
     print(ans) #print final answer
 
-if(value.isdigit()): #Check if the input is an positive integer
-    SumOfNum(int(value))#Call the function created above to print the sum of all numbers between one and the value given 
-else:
-    print("Incorrect Input Given")# incorrect input
+try:
+    if int(value)>0:
+        SumOfNum(int(value))#Call the function created above to print the sum of all numbers between one and the value given 
+    elif int(value)<0:#if number is negative
+        raise ValueError#raise an exception
+except ValueError:
+    print("Incorrect Input Given")
+

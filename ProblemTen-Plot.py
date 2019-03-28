@@ -1,17 +1,16 @@
 #Name: Eoin Stankard
-#Date: 24/03/2019
+#Date: 28/03/2019
 #Problem Ten: Write a program that displays a plot of the functions x, x^2
 # and 2^x
+import matplotlib.pyplot as plt 
+import numpy as np
 
 print("Please select a function to Plot from [0,4]")
 print("1. Function X")
 print("2. Function x^2")
 print("3. Function 2^x")
 print("4. All Functions")
-value = input("Choice: ")
-
-import matplotlib.pyplot as plt 
-import numpy as np
+value = input("Choice 1-4: ")
 
 def plot(v):#function for plotting graph
     x = np.arange(0.0, 4.0, 1) #Graph from 0-4 in steps of 1
@@ -40,12 +39,12 @@ def plot(v):#function for plotting graph
     plt.grid(True) #Add grid
     plt.show()#Show graph
 
-if(value.isdigit()): #Check if the input is an positive integer
+try:
     if int(value)==1 or int(value)==2 or int(value)==3 or int(value)==4:#check if value is between 1-4
-        plot(int(value))
+        plot(int(value))#call function
     else:
-        print("Incorrect Input Given")# incorrect input
-else:
+        raise ValueError #raise exception
+except ValueError:
     print("Incorrect Input Given")# incorrect input
 
 

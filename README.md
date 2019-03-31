@@ -1,6 +1,7 @@
 # pands-problem-set Solutions
 
-This repository contains my solutions to the problem set 2019 for the module Programming and Scripting in GMIT
+This repository contains my solutions to the problem set 2019 for the module Programming and Scripting in GMIT.
+All problems for this problem set are in the ProblemInstructions.pdf file.
 
 ##How to download this repository
 1. Go To Github
@@ -156,4 +157,6 @@ This repository contains my solutions to the problem set 2019 for the module Pro
     3. https://docs.python.org/2/tutorial/datastructures.html
     
     4. https://docs.python.org/2/tutorial/inputoutput.html
+    
+    5. https://docs.python.org/2/tutorial/errors.html
 
